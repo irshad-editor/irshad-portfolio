@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irshad Express - Video Editing Portfolio</title>
+  <style>
+    /* Basic Reset & Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.dark {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #ffffff;
+    }
+
+    body.light {
+      background: linear-gradient(135deg, #e3e3e3, #ffffff);
+      color: #111;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #444;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 1rem auto;
+    }
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .video-card {
+      width: 300px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+
+    /* Opening Animation */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="dark">
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>🎬 Irshad Editor</h1>
+    <nav>
+      <a href="#intro">Intro</a>
+      <a href="#portfolio">Top 10 Edits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>🚀 Who Am I?</h2>
+    <p>Hi! I'm <strong>Irshad</strong>, a 13-year-old self-taught video editor from Nepal. I started editing videos at the age of 11 using mobile apps like KineMaster and CapCut. Now I’m leveling up with Davinci resolve, After Effects and Premiere Pro.</p>
+    <p>I create reel edits, cinematic reels, slow motion scenes, YouTube Shorts, motivational videos, colour grading, story telling,  and more. Every frame I create tells a story — and every beat hits hard 💥.</p>
+    <p><strong>💰 Editing Charges:</strong> ₹50 to ₹250 per video (depends on style, length & quality).</p>
+  </section>
+
+  <section id="tools" style="margin-top: 40px;">
+  <h2 style="color: #f39c12;">🛠️ Tools I Use</h2>
+  <ul style="list-style: none; padding-left: 0; font-size: 1.1rem;">
+    <li>🎞️ <strong>DaVinci Resolve</strong> – For color grading and fast editing</li>
+    <li>🎬 <strong>Adobe Premiere Pro</strong> – For professional YouTube & reel cuts</li>
+    <li>✨ <strong>After Effects</strong> – For transitions, motion graphics & VFX</li>
+  </ul>
+</section>
+
+
+  <section id="portfolio">
+    <h2>🔥Best Works</h2>
+    <div class="video-grid">
+
+      <!-- Video 1 -->
+ <div class="video-card">
+<html>
+    <head>
+        <title>my portfolio </title>
+        <body>
+            <h1>sample-hook</h1>
+            
+        <video src="edit1.mp4" controls width="100" height="200"  ></video>
+        </body>
+        </head>
+        </html>
+
+ 
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📩 Contact Me</h2>
+    <p><strong>Email:</strong> <a href="mailto:irshadeditor106@gmail.com">irshadeditor106@gmail.com</a></p>
+    <p><strong>Facebook:</strong> <a href="https://facebook.com/yourfbid" target="_blank">facebook.com/yourfbid</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/yourinsta" target="_blank">@yourinsta</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Irshad Editor | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
+
